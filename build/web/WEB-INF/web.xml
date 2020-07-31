@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Guardar_Registro</servlet-name>
+        <servlet-class>Guardar_Registro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Consultar_Lista</servlet-name>
+        <servlet-class>Consultar_Lista</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Eliminar_datos</servlet-name>
+        <servlet-class>Eliminar_datos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Guardar_Registro</servlet-name>
+        <url-pattern>/Guardar_Registro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Consultar_Lista</servlet-name>
+        <url-pattern>/Consultar_Lista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Eliminar_datos</servlet-name>
+        <url-pattern>/Eliminar_datos</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
